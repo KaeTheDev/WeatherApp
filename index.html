@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body class="app">
+    <header class="header">
+        <h1>DojoWeather</h1>
+        <div class="locations">
+            <p onclick="selectCity()" class="location">Burbank</p>
+            <p onclick="selectCity()"  class="location">Chicago</p>
+            <p onclick="selectCity()"  class="location">Dallas</p>
+        </div>
+    </header>
+    
+<div class="container">
+    <div class="subsection">
+        <p class="currentState">San Jose</p>
+        <form action="#">
+            <label for="temperature">show temperature in</label>
+            <select name="temperature" id="temperature">
+                <option value="celsius">C&deg;</option>
+                <option value="fahrenheit">F&deg;</option>
+            </select>
+        </form>
+    </div>
+
+    <hr>
+    <main>
+        <!--TODAY SECTION-->
+        <div class="today">
+            <p class="day-of-week">Today</p>
+            <img class="weather-images" src="./resources/rain.png" alt="rain clouds">
+            <p class="forecast">some rain</p>
+            <div class="degrees">
+                <p class="fahrenheit">24&deg;</p>
+                <p class="celsius">18&deg;</p>
+            </div>
+        </div>
+
+        <!--TOMORROW SECTION-->
+
+        <div class="tomorrow">
+            <p class="day-of-week">Tomorrow</p>
+            <img class="weather-images" src="./resources/sun.png" alt="sun">
+            <p class="forecast">some sun</p>
+            <div class="degrees">
+                <p class="fahrenheit">27&deg;</p>
+                <p class="celsius">19&deg;</p>
+            </div>
+        </div>
+
+        <!--FRIDAY SECTION-->
+
+        <div class="friday">
+            <p class="day-of-week">Friday</p>
+            <img class="weather-images" src="./resources/clouds.png" alt="rain clouds">
+            <p class="forecast">some clouds</p>
+            <div class="degrees">
+                <p class="fahrenheit">21&deg;</p>
+                <p class="celsius">16&deg;</p>
+            </div>
+        </div>
+
+        <!--SATURDAY SECTION-->
+
+        <div class="saturday">
+            <p class="day-of-week">Saturday</p>
+            <img class="weather-images" src="./resources/sun.png" alt="rain clouds">
+            <p class="forecast">some sun</p>
+            <div class="degrees">
+                <p class="fahrenheit">26&deg;</p>
+                <p class="celsius">21&deg;</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="cookie-warning">
+        <img class="cookie-image" src="./resources/cookie.png" alt="cookie-image">
+        <div class="warning-message">
+            <h2>Stop! Cookie time</h2>
+            <p class="cookie-message">We use cookies (sadly not the edible ones) to personalize <br> content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+            </p>
+        </div>
+        <button onclick="removeCookieWarning()" class="accept-btn">I Accept</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
